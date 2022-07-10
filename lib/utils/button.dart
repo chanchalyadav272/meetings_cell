@@ -48,9 +48,10 @@ class CustomButton extends StatelessWidget {
 class gestureButton extends StatelessWidget {
   final VoidCallback onPressed;
   final IconData icon;
-  final String text;
+  final String text1;
+  final String text2;
 
-  const gestureButton({Key? key, required this.onPressed, required this.icon, required this.text}) : super(key: key);
+  const gestureButton({Key? key, required this.onPressed, required this.icon, required this.text1, required this.text2}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -75,7 +76,13 @@ class gestureButton extends StatelessWidget {
 
         ),
         const SizedBox(height: 10,),
-        Text(text, style: TextStyle(color: Colors.grey),)
+        Container(child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(text1, style: TextStyle(color: Colors.grey),textAlign: TextAlign.center,),
+            Text(text2, style: TextStyle(color: Colors.grey),textAlign: TextAlign.center,),
+          ],
+        ),width: 60, )
 
       ]),
     );

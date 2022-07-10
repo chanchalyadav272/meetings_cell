@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 import '../utils/button.dart';
@@ -62,7 +63,8 @@ class _HomeState extends State<Home> {
 
 
 
-      body: Column(children: [
+      body: Column(
+          children: [
         SizedBox(height: 20,),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -70,20 +72,35 @@ class _HomeState extends State<Home> {
             gestureButton(
               onPressed: (){},
               icon: Icons.add,
-              text: '   New Meeting  ',),
+              text1: 'New',
+              text2: 'Meeting',),
 
             gestureButton(
               onPressed: (){},
               icon: Icons.videocam,
-              text: '  Join Meeting  ',),
+              text1: 'Join',
+              text2: 'Meeting',),
 
             gestureButton(
               onPressed: (){},
               icon: Icons.edit_calendar_outlined,
-              text: 'Schedule Meeting',)
+              text1: 'Schedule',
+              text2: 'Meeting',),
+            gestureButton(
+              onPressed: (){},
+              icon: Icons.arrow_upward,
+              text1: 'Share',
+            text2: 'Screen',)
 
 
-          ],)
+          ],),
+            SizedBox(height: MediaQuery.of(context).size.height*0.15,),
+            Padding(
+              padding: const EdgeInsets.only(left: 14),
+              child: Image(image: AssetImage('assets/images/img.png')),
+            )
+
+
       ]),
 
     );
