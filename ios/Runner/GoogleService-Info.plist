@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>161395341059-o4ikoctmp94vpkt84hmkpsng858l65ob.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.161395341059-o4ikoctmp94vpkt84hmkpsng858l65ob</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAlsbjNCl333CMU5U1yQfjJUgfxundEXks</string>
+	<key>GCM_SENDER_ID</key>
+	<string>161395341059</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.chanchalyadav.meetingsCell</string>
+	<key>PROJECT_ID</key>
+	<string>meetings-cell</string>
+	<key>STORAGE_BUCKET</key>
+	<string>meetings-cell.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:161395341059:ios:92b8728f3d58fed679db36</string>
+</dict>
+</plist>
