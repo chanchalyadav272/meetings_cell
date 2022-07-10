@@ -82,7 +82,7 @@ class gestureButton extends StatelessWidget {
             Text(text1, style: TextStyle(color: Colors.grey),textAlign: TextAlign.center,),
             Text(text2, style: TextStyle(color: Colors.grey),textAlign: TextAlign.center,),
           ],
-        ),width: 60, )
+        ),width: MediaQuery.of(context).size.width*0.2, )
 
       ]),
     );

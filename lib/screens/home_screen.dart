@@ -67,6 +67,7 @@ class _HomeState extends State<Home> {
           children: [
         SizedBox(height: 20,),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             gestureButton(
