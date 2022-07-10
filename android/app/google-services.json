@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "161395341059",
+    "project_id": "meetings-cell",
+    "storage_bucket": "meetings-cell.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161395341059:android:1e46277877f6a15879db36",
+        "android_client_info": {
+          "package_name": "com.chanchalyadav.meetings_cell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161395341059-55tok6q8li9vumvchv6bq7a1jl7jb9tn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chanchalyadav.meetings_cell",
+            "certificate_hash": "572fcc7158a7598375f6394781876c08d4d98f70"
+          }
+        },
+        {
+          "client_id": "161395341059-jeadidgd78i25omo4epv7fr9me09atlj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr-Alk-PS9sN4gVTF1jMgDCT2oOnuFJrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161395341059-jeadidgd78i25omo4epv7fr9me09atlj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "161395341059-o4ikoctmp94vpkt84hmkpsng858l65ob.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.chanchalyadav.meetingsCell"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
