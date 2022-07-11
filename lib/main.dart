@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:meetings_cell/resources/auth_methods.dart';
 import 'package:meetings_cell/screens/home_screen.dart';
 import 'package:meetings_cell/screens/login_screen.dart';
+import 'package:meetings_cell/screens/join_meeting_screen.dart';
 import 'package:meetings_cell/utils/colors.dart';
 
 
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login': (context) => const Login(),
         '/home':(context) => const Home(),
+        '/video-call': (context) => const JoinMeetingScreen(),
       },
 
 

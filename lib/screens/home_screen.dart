@@ -1,8 +1,12 @@
 
 import 'package:flutter/material.dart';
+import 'package:meetings_cell/resources/auth_methods.dart';
+import 'package:meetings_cell/screens/history_meetings_screen.dart';
+import 'package:meetings_cell/screens/profile_screen.dart';
 
 import '../utils/button.dart';
 import '../utils/colors.dart';
+import 'meeting_screen.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -12,6 +16,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
   int _page = 0;
   onPageChanged(int page) {
     setState(() {
@@ -19,7 +24,14 @@ class _HomeState extends State<Home> {
     });
 
   }
+  List<Widget> pages =[
+    MeetingScreen(),
+    const HistoryMeetingScreen(),
+    // const Text('Contacts'),
+    const ProfileScreen(),
+    
 
+  ];
 
 
 
@@ -51,58 +63,19 @@ class _HomeState extends State<Home> {
                 icon: Icon(Icons.lock_clock),
                 label: "Meetings"
             ),
+            // BottomNavigationBarItem(
+            //     icon: Icon(Icons.person_outline),
+            //     label: "Contacts"
+            // ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.person_outline),
-                label: "Contacts"
-            ),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.settings_outlined),
-                label: "Settings"
+                icon: Icon(Icons.person_outline_outlined),
+                label: "Profile"
             ),
           ]),
 
 
 
-      body: Column(
-          children: [
-        SizedBox(height: 20,),
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            gestureButton(
-              onPressed: (){},
-              icon: Icons.add,
-              text1: 'New',
-              text2: 'Meeting',),
-
-            gestureButton(
-              onPressed: (){},
-              icon: Icons.videocam,
-              text1: 'Join',
-              text2: 'Meeting',),
-
-            gestureButton(
-              onPressed: (){},
-              icon: Icons.edit_calendar_outlined,
-              text1: 'Schedule',
-              text2: 'Meeting',),
-            gestureButton(
-              onPressed: (){},
-              icon: Icons.arrow_upward,
-              text1: 'Share',
-            text2: 'Screen',)
-
-
-          ],),
-            SizedBox(height: MediaQuery.of(context).size.height*0.15,),
-            Padding(
-              padding: const EdgeInsets.only(left: 14),
-              child: Image(image: AssetImage('assets/images/img.png')),
-            )
-
-
-      ]),
+      body: pages[_page],
 
     );
   }
