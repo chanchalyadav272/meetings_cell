@@ -1,16 +1,9 @@
-# meetings_cell
+# Meetings Cell
 
-A new Flutter project.
+– A mobile application for group video calls along with in-call messages support developed using Flutter framework.
 
-## Getting Started
+– Integrated Google Sign-In authentication method using Firebase.
 
-This project is a starting point for a Flutter application.
+– Used Firestore database to store user info along with list of meetings attended.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+– Used Jitsi-meet plugin to implement support for secure and high quality video conferencing. – Supported platforms: iOS & Android
