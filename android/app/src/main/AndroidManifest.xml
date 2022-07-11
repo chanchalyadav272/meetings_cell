@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.chanchalyadav.meetings_cell">
+    package="com.chanchalyadav.meetings_cell"
+    xmlns:tools="http://schemas.android.com/tools">
    <application
-        android:label="meetings_cell"
+       tools:replace="android:label"
+       android:label="meetings_cell"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
